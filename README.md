@@ -4,10 +4,6 @@
 
 HTML IPTV Player with EPG viewer for M3U8 playlist
 
-https://dbghelp.github.io/player.html?file=<link to playlist.m3u8\>
-
-https://dbghelp.github.io/player.html?file=https://dbghelp.github.io/playlist.m3u8
-
 ## Features
 
 - Mouse over channel logo to view EPG for specific channel (with thumbnail images from epg.xml)
@@ -15,6 +11,33 @@ https://dbghelp.github.io/player.html?file=https://dbghelp.github.io/playlist.m3
 - Supports different key formats (hex, base64, multiple keys)
 - Supports DASH, HLS, MSS (using shaka player)
 - Auto assign `tvg-id` from `epg.xml` to `tvg-id` in `playlist.m3u8` (when missing)
+
+## About This Fork
+This fork introduces several usability improvements and UI enhancements while keeping the original project structure intact.  
+It is designed to remain fully compatible with the upstream repository and can be merged or referenced independently.
+
+## Changelog 
+
+V3 update:
+
+### 1. Sticky Search Bar
+The search input is now sticky, remaining visible at the top of the channel list.  
+This makes navigation easier when working with large playlists, as you no longer need to scroll back to the top to search for a channel.
+
+### 2. Automatic Grouping by `group-title`
+Channels are now automatically grouped based on the `group-title` attribute found in the playlist.  
+This significantly reduces list length and improves playlist organization and readability.
+
+### 3. Keyboard Controls
+Added modern keyboard shortcuts for a smoother user experience:
+- **P** — Play / Pause  
+- **M** — Mute / Unmute  
+- **Arrow Up / Arrow Down** — Volume Up / Down  
+- **F** — Fullscreen toggle (enter/exit fullscreen)
+
+### 4. Input Protection
+When typing inside an input field (e.g., search box), keyboard shortcuts no longer trigger player actions.  
+This prevents accidental playback or volume changes while entering text.
 
 V2 update:
 - Added timeshift feature to watch previously aired TV programmes
@@ -60,13 +83,6 @@ https://github.com/dbghelp/html-epg-viewer
 https://dbghelp.github.io/epg.html?file=<link to epg.xml\>
 
 [https://dbghelp.github.io/epg.html?file=https://raw.githubusercontent.com/dbghelp/mewatch-EPG/refs/heads/main/mewatch.xml](https://dbghelp.github.io/epg.html?file=https://raw.githubusercontent.com/dbghelp/mewatch-EPG/refs/heads/main/mewatch.xml)
-
-## Create your own IPTV web app in 5 minutes
-
-1. Download `create_your_own_iptv_webapp.html` from this repository
-2. Open the file in notepad, search for `m3u8Link='https://dbghelp.github.io/playlist.m3u8` and replace the hardcoded playlist.m3u8 link to your m3u8 playlist link
-3. Rename the file to what you like
-4. Find a static html hosting service and upload the html file (or use python -m http.server to host locally)
 
 ## CORS issue
 
