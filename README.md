@@ -48,15 +48,6 @@ V2 update:
 - Added error handling for malformed EPGs
 
 
-## Screenshots
-*Channel logos used for illustration purpose only
-![Local Image](./img/home.png)
-![Local Image](./img/home_2.png)
-![Local Image](./img/home_3.png)
-![Local Image](./img/epg_all.png)
-![Local Image](./img/epg_all_2.png)
-![Local Image](./img/epg_all_3.png)
-
 ## Sample M3U8 playlist format
 ```
 #EXTM3U url-tvg="https://raw.githubusercontent.com/dbghelp/StarHub-TV-EPG/refs/heads/main/starhub.xml, https://raw.githubusercontent.com/dbghelp/mewatch-EPG/refs/heads/main/mewatch.xml" refresh="3600"
